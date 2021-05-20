@@ -2,4 +2,4 @@
 [![Actions Status](https://github.com/Toomean/devops-for-programmers-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Toomean/devops-for-programmers-project-lvl1/actions)
 
 ### Push status:
-[![Push Status](https://github.com/Toomean/devops-for-programmers-project-lvl1/workflows/push/badge.svg)](https://github.com/Toomean/devops-for-programmers-project-lvl1/actions)
+[![CI Status](https://github.com/Toomean/devops-for-programmers-project-lvl1/workflows/CI/badge.svg)](https://github.com/Toomean/devops-for-programmers-project-lvl1/actions)
