@@ -6,4 +6,6 @@ RUN npm install --global @nodosjs/cli@0.0.55
 
 EXPOSE 8080
 
+RUN npm install
+
 CMD ["nodos", "server", "-h", "0.0.0.0"]
