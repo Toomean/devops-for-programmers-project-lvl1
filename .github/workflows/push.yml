@@ -44,7 +44,3 @@ jobs:
           cache-to: type=inline
           push: true
           tags: ${{ env.APP_IMAGE_NAME }}:cached
-          
-      - name: Check
-        run: |
-          docker-compose --file docker-compose.yml up --abort-on-container-exit
