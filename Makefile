@@ -2,10 +2,10 @@ server:
 	npx nodos server
 
 test:
-	docker run toomean/devops-for-programmers-project-lvl1 npm run test
+	docker run toomean/devops-for-programmers-project-lvl1 npx jest
 
 lint:
-	docker run toomean/devops-for-programmers-project-lvl1 npm run lint
+	docker run toomean/devops-for-programmers-project-lvl1 npx eslint . --fix
 
 up:
 	docker-compose up -d
