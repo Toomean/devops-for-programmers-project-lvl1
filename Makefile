@@ -2,7 +2,10 @@ server:
 	npx nodos server
 
 test:
-	npm -s test
+	docker run toomean/devops-for-programmers-project-lvl1 npm run test
+
+lint:
+	docker run toomean/devops-for-programmers-project-lvl1 npm run lint
 
 up:
 	docker-compose up -d

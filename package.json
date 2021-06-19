@@ -1,6 +1,7 @@
 {
   "scripts": {
     "test": "jest",
+    "lint": "eslint . --fix",
     "start": "nodos server",
     "build": "webpack -p"
   },
