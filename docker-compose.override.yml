@@ -11,3 +11,14 @@ services:
       DEVELOPMENT: "true"
       NODOS_HOST: "0.0.0.0"
     command: "npm start"
+
+  caddy:
+    image: caddy:2.3.0-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/services/caddy/Caddyfile
+    depends_on:
+      - app

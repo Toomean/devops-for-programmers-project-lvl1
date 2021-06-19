@@ -6,3 +6,13 @@ services:
     volumes:
       - .:/app
     command: "make test"
+    depends_on:
+      - db
+  db:
+    image: postgres:13.3-alpine
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=${NODOS_DB_USERNAME}
+      - POSTGRES_PASSWORD=${NODOS_DB_PASSWORD}
