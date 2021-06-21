@@ -5,7 +5,7 @@ services:
     build: .
     volumes:
       - .:/app
-    command: "npx jest"
+    command: ["sh", "-c", "npx jest && npx eslint . --fix"]
     depends_on:
       - db
   db:
