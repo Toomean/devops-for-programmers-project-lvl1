@@ -5,7 +5,7 @@ services:
     build: .
     volumes:
       - .:/app
-    command: "make test"
+    command: "npx jest"
     depends_on:
       - db
   db:
