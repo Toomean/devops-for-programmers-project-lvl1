@@ -5,7 +5,7 @@ services:
     build: .
     volumes:
       - .:/app
-    command: ["sh", "-c", "npm run lint && npm run test"]
+    command: ["sh", "-c", "npx eslint . --fix && npm run test"]
     depends_on:
       - db
   db:
