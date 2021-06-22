@@ -8,8 +8,7 @@ lint:
 	docker run toomean/devops-for-programmers-project-lvl1 npx eslint . --fix
 
 check:
-	docker-compose --file docker-compose.yml build
-	docker-compose --file docker-compose.yml up --abort-on-container-exit
+	docker-compose --file docker-compose.yml up --build --abort-on-container-exit
 
 up:
 	docker-compose up -d
